@@ -3,7 +3,6 @@ Submit = () => {
   var lname = document.getElementById("lname").value;
   var number = document.getElementById("number").value;
   var email = document.getElementById("email").value;
-  var pass = document.getElementById('pass').value;
   var dob = document.getElementById("dob").value;
 
   //  start of name validation
@@ -21,10 +20,6 @@ Submit = () => {
   } else {
     alert("enter valid email");
   }
-
-  // password validation
-    
-
   //   end of email validation
 
   // start of number validation
@@ -81,6 +76,28 @@ Submit = () => {
         "\n Gender: " +
         gen22
     );
+    document.location.href = "./favebook.html";
   }
   // end of writing all th info.
+  let user = new Set();
+  user.add(fname);
+  user.add(lname);
+  user.add(email);
+  user.add(number);
+  user.add(dob);
+  user.add(gen22);
+  //set
+  console.log(user);
+  //for each
+  user.forEach((n) => {
+    console.log(n);
+  });
+  //has
+  console.log(user.has("Rohit"));
+  //map
+  var date = new Date();
+  console.log(date);
+  let user1 = new Map();
+  user1.set(fname + " " + lname, new Date());
+  console.log(user1);
 };

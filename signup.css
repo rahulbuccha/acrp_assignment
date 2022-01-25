@@ -7,22 +7,23 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
+  border: 1px dotted black;
   margin: auto;
-  margin-left: 35%;
+  margin-left: 25%;
   margin-right: 35%;
-  background-color: rgb(0, 119, 255);
-  border-radius: 8%;
+  border-radius: 4%;
+  width: 45%;
+  height: 60%;
+  padding: 10px;
+  box-shadow: 12px 12px 20px;
+  text-align: center;
+  background-color: #319ed1;
 }
 button {
   background-color: black;
   color: white;
   border-radius: 24%;
-}
-input {
-  margin-bottom: 1%;
-  border-radius: 2%;
-}
-input:hover {
-  transform: scale(1.03);
+  font-size: 23px;
+  width: 100px;
+  height: 58px;
 }
