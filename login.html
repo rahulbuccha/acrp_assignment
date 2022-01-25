@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login page</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div>
+      <h1>
+        <ins>SignUp</ins>
+      </h1>
+      <form name="simpleForm">
+        <br />
+        <input type="text" id="fname" placeholder="firstname" required />
+
+        <input type="text" id="lname" placeholder="lastname" required />
+
+        <input type="email" id="email" placeholder="email " required />
+
+        <input type="password" id="pass" placeholder="password " required />
+
+        <input type="number" id="number" placeholder="number" />
+
+        <label>Date Of Birth</label>
+        <input type="Date" id="dob" />
+
+        <label>Gender</label>
+        <div>
+          <input type="radio" name="gender" id="genMale" value="Male" />male
+          <input
+            type="radio"
+            name="gender"
+            id="genFemale"
+            value="Female"
+          />female
+          <input type="radio" name="gender" id="genOther" value="Other" />other
+        </div>
+        <p>
+          By clicking Sign Up, you agree to our Terms, Data Policy and Cookie
+          Policy. You may receive SMS notifications from us and can opt out at
+          any time.
+        </p>
+        <input type="button" onclick="Submit()" value="Sign up" />
+      </form>
+    </div>
+  </body>
+</html>
